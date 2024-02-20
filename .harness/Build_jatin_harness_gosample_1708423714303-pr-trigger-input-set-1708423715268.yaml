@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_jatin_harness_gosample_1708423714303-pr-trigger-input-set
+  identifier: Build_jatin_harness_gosample_1708423714303prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_jatin_harness_gosample_1708423714303
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
