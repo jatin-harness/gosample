@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_jatin_harness_gosample_1708423597228-push-trigger-input-set
+  identifier: Build_jatin_harness_gosample_1708423597228pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_jatin_harness_gosample_1708423597228
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
