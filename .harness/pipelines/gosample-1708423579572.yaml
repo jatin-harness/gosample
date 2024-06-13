@@ -23,7 +23,7 @@ pipeline:
                   name: Build Go App
                   spec:
                     command: |-
-                      echo "Welcome to Harness CI"
+                      echo "Welcome to Harness CI, Hope you like it"
                       go build
                       go test
               - step:
