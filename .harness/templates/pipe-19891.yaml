@@ -1,0 +1,33 @@
+template:
+  name: testTemplate
+  identifier: testTemplate
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: DoNotDeleteJatin
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: ShellScript_1
+              identifier: ShellScript_1
+              spec:
+                shell: Bash
+                executionTarget: {}
+                source:
+                  type: Inline
+                  spec:
+                    script: echo "Hi"
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
+    variables:
+      - name: test
+        type: String
+        description: ""
+        required: false
+        value: <+input>.executionInput().allowedValues(test1,test2)
