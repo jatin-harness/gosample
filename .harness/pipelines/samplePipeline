@@ -1,0 +1,45 @@
+pipeline:
+  name: WaitStep1
+  identifier: WaitStep1
+  projectIdentifier: TEST
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: stage1
+        identifier: stage1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10s
+        tags: {}
+    - stage:
+        name: stage2
+        identifier: stage2
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: <+input>.executionInput()
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
