@@ -2,11 +2,11 @@ pipeline:
   identifier: Build_rustd_gosample_1701883572388
   name: Build gosample
   orgIdentifier: default
-  projectIdentifier: pranavt1
+  projectIdentifier: TEST
   properties:
     ci:
       codebase:
-        connectorRef: pranavgithub
+        connectorRef: githubconnector
         repoName: gosample
         build: <+input>
   stages:
