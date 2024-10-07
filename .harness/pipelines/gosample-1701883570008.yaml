@@ -11,8 +11,8 @@ pipeline:
         build: <+input>
   stages:
     - stage:
-        identifier: default
-        name: default
+        identifier: stage1
+        name: stage1
         spec:
           cloneCodebase: true
           execution:
