@@ -2,7 +2,7 @@ pipeline:
   identifier: Build_jatin_harness_gosample_1708423714303
   name: Build gosample
   orgIdentifier: default
-  projectIdentifier: default_project
+  projectIdentifier: TEST
   properties:
     ci:
       codebase:
