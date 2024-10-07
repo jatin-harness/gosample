@@ -1,0 +1,22 @@
+inputSet:
+  name: waitStepInputSet
+  identifier: waitStepInputSet
+  orgIdentifier: default
+  projectIdentifier: TEST
+  pipeline:
+    identifier: WaitStep1
+    stages:
+      - stage:
+          identifier: stage2
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    spec:
+                      source:
+                        type: Inline
+                        spec:
+                          script: <+input>.executionInput()
