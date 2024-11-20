@@ -1,0 +1,33 @@
+template:
+  name: pipelineRemoteTemp
+  identifier: pipelineRemoteTemp
+  type: Pipeline
+  projectIdentifier: naidusanity
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: stage1
+          identifier: stage1
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: ShellScript
+                    name: ShellScript_1
+                    identifier: ShellScript_1
+                    spec:
+                      shell: Bash
+                      executionTarget: {}
+                      source:
+                        type: Inline
+                        spec:
+                          script: echo "hi, This is remote pipeline template"
+                      environmentVariables: []
+                      outputVariables: []
+                    timeout: 10m
+          tags: {}
+  versionLabel: v2
