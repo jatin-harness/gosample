@@ -1,0 +1,9 @@
+pipeline:
+  name: testTempRef
+  identifier: testTempRef
+  tags: {}
+  template:
+    templateRef: pipelineRemoteTemp
+    versionLabel: v1
+  projectIdentifier: naidusanity
+  orgIdentifier: default
