@@ -4,6 +4,6 @@ pipeline:
   tags: {}
   template:
     templateRef: pipelineRemoteTemp
-    versionLabel: v2
+    versionLabel: v3
   projectIdentifier: naidusanity
   orgIdentifier: default
