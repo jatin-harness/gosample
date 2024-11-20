@@ -1,6 +1,7 @@
 template:
   name: pipelineRemoteTemp
   identifier: pipelineRemoteTemp
+  versionLabel: v1
   type: Pipeline
   projectIdentifier: naidusanity
   orgIdentifier: default
@@ -30,4 +31,3 @@ template:
                       outputVariables: []
                     timeout: 10m
           tags: {}
-  versionLabel: v2
