@@ -29,5 +29,11 @@ template:
                           script: echo "hi, This is remote pipeline template"
                       environmentVariables: []
                       outputVariables: []
-                    timeout: 10m
+                    timeout: <+input>
           tags: {}
+          variables:
+            - name: stgVar
+              type: String
+              description: ""
+              required: false
+              value: <+input>
